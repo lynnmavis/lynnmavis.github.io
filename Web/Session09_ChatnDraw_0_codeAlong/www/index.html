@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <link rel="shortcut icon" href="">
+        <link rel="stylesheet" type="text/css" href="css/appstyle.css">
+        <script src="/socket.io/socket.io.js"></script>
+        <!--  Include the raphael library from the jslibs directory  -->
+        <script type="text/javascript" src="jslibs/raphael.js"></script>
+        <!--  Use the require.js module loader, and tell it where our main JavaScript file is  -->
+        <script defer type="text/javascript" src="appscripts/main.js"> </script>
+        <title>All together</title>
+    </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        All together, now!
+      </header>
+
+      <nav class="sidebar">
+
+        <div>
+          Chat box:<br>
+          <textarea id="chatBox" rows="16" cols="16"></textarea>
+        </div>
+
+        <div>
+          Type:<br>
+          <textarea id="typingBox" rows="2" cols="16"></textarea>
+        </div>
+
+      </nav>
+
+      <article class="content" id="centerDiv" id="svgcanvasDiv">
+        <div id="svgcanvasDiv"> 
+            <div id="svgcanvas"> </div>  <!--  <article>   article  </article> -->
+
+        </div>
+      </article>
+
+      <!-- Ditto the previous note about <aside>. -->
+      <aside class="sidebar">
+        Controls<br>
+        <input type="button" id="clear" value="CLEAR">
+
+        <br><h3>Sliders</h3>
+
+        <label for="Hue" class="label">Hue</label><br>
+        <input type="range" min="0" max="360" class="slider" id="Hue" step="0.05"><br>
+
+        <label for="Sat" class="label">Saturation</label><br>
+        <input type="range" min="0" max="100" class="slider" id="Sat" step="0.05"><br>
+
+        <label for="Light" class="label">Lightness</label><br>
+        <input type="range" min="0" max="100" class="slider" id="Light" step="0.05"><br>
+
+        <label for="strokeWidth" class="label">Stroke Width</label><br>
+        <input type="range" min="4" max="40" class="slider" id="strokeWidth" step="0.05"><br>
+
+
+      </aside>
+
+      <footer class="footer" id="myFooter">
+
+      </footer>
+
+    </div>
+</html>
+
+
+
