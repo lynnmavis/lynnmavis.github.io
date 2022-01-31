@@ -1,0 +1,28 @@
+html, body
+{
+	background-color:black;
+	height: 98%;
+	width: 98%;
+	color: white;
+}
+
+
+h3 {color:white;
+	height: 10%;
+	user-select: none;
+	text-align: center;
+}
+
+
+#mySVGCanvas {
+	border: 1px solid #00f;
+	width: 90%;
+	height: 85%;
+	margin: auto;
+	background-color: white;
+
+}
+
+
+
+
