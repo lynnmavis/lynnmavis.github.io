@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/appstyle.css">
+        <title>Mavis NM2207</title>
+        <script defer type="text/javascript" src="appscripts/main.js">
+        </script>
+    </head>
+
+  <body>
+    
+    <!-- Header -->
+    <div class="container">
+      <header class="header">
+        <h2> Mavis' NM2207 Homepage</h2>
+      </header>
+
+      <!-- Assignments -->
+      <nav class="sidebar">
+        <h3>Assignments</h3>
+        <ul>
+          <li> <a href="H01_HyerlinkedStorytelling/index.html"> Hyperlinked Storytelling </a> </li>
+          <li> <a href="H03_DomCom_GridLayout/H03_DomCom_GridLayout/index.html"> DomCom Grid Layout </a> </li>
+          <li> <a href="H04_ColorInteractivity_SartingTemplate/index.html"> Color Interactivity </a> </li>
+          <li> <a href="Tutorial05_funwithRaphael/www/index.html"> Fun with Raphael </a> </li>
+          <li> <a href="H05_SmileFrownRaphael_StartingTemplate/index.html"> Smile Frown Using Raphael </a> </li>
+          <li> <a href="H06_TimerAnimation/index.html"> Timer Animation </a> </li>
+          <li> <a href="H07_ListLoops_StartingTemplate/index.html"> List Loops </a> </li>
+        </ul>
+          
+        <br>
+        <h3>Tutorials</h3>
+        <ul>
+        <li> <a href="session06.beziertutorial/index.html"> Bezier </a> </li>
+        <li> <a href="Week08_challenge_collisions/index.html"> Challenge Collisions </a> </li>
+        <li> <a href="Array&SoundTutorial2021/index.html"> Array & Sound </a> </li>
+        <li> <a href="http://nm2207.org:13203/"> Timer Game </a> </li>
+        <li> <a href="http://nm2207.org:23203/"> Chat and Draw MultiServer </a> </li>
+        
+
+      </ul>  
+      </nav>
+
+<!-- Content -->
+
+      <article class="content" id="displaypicture">
+        <h3>About Me</h3>
+        <img src="resources/displaypicture.jpg" alt="Avatar" class="avatar">
+        <p> Hello~ Welcome to my site for NM2207!! I am a final year student pursuing Project and Facilities Management at the School of Design and Environment and minoring in CNM. I took this course to learn more about web design. Have fun exploring my site! :) </p>
+
+        <br>
+        <hr>
+        <br>
+
+        <h3 class="journal" id="week10" style="color:LightCoral;">Week 10: Project Idea</h3>
+        
+          <img src="Final_Project/www/Resources/NM2207_finalproj_sketch.png" width="64%">
+          <br>
+          <br>
+          I will be building my project using the challenge collisions tutorial. The overall idea is to achieve a game similar to space invaders. The main aim of the game is for players to attack incoming threats (represented by the squares). The player will use the left and right arrow keys to move and spacebar to shoot "bullets". If possible, I will like to incorporate more obstacles (represented by lightning) to make the game more challenging. The obstacles will be dropped randomly for the player to dodge. I also hope to incorporate some movement to the threats to make them harder to hit. The above is a rough sketch of the project idea.
+          <br>
+          <br>
+          Components I will need: <br>
+
+          1. A shooter/player that moves left and right (triangle) <br>
+          2. Bullets upon pressing spacebar (circle) <br>
+          3. Removing the threats upon collision with bullet <br> 
+          4. Removing bullets upon collision with threats <br>
+          5. Random obstacles dropping down (lightning) <br>
+          6. Grid layout <br>
+          7. A scoreboard <br>
+          
+          <br>
+          Challenges: 
+          In the challenge collisions tutorial, the shooter is stationary. I will have to figure how to move the shooter using the left and right keyboard arrows, as well as incorporate spacebar instead of listening to mouse clicks. I also have to ensure that the game ends when certain types of collision occurs. For the random obstacles, I will also have to figure out a way for them to “rain” down in a continuous manner.  
+          <br>
+        </p>
+
+        <h3 class="journal" id="week11" style="color:LightCoral;">Week 11: Project Update</h3>
+
+          This week I will be touching on some of my attempts. I tried to make the shooter movable. I made a rect for the shooter and managed to make it movable (left and right). I also learnt the different keydown numbers which represent the left, right and spacebar keys. <br><br>
+
+          The first challenge for me was thinking how to limit the shooter to only be visible within 0 to the canvas width. I realised that when I press left or right too long, the entire shooter goes out of the canvas. So I incorporated some if conditional statements just to make sure that the shooter remains visible. <br><br>
+
+          I also need an array of threats for which I applied the structure learnt during tutorials. However, I am facing some difficulties with the firing of bullets from the shooter. This week, I hope to be able to work out the smooth & continuous firing of the bullet as well as the detection of collision for which the threats will be removed. <br><br>
+
+          Check my feeble attempt here: <a href="Week11_ProjectUpdate/www/index.html"> Week 11 Project Update </a>
+
+        <h3 class="journal" id="week12" style="color:LightCoral;">Week 12: Project Update</h3>
+
+          At the moment, my code is a little messy because of all the trial and errors I did.  I’d have to clear it up and comment/title my sections and subsections clearly. Some things that I tried to achieve this week include firing bullets continuously and moving the array of threats from left and right… <br><br>
+
+          In “storing” the array of bullets, I realise that I have been shifting the entire array around. Therefore, I was unable to fire a single bullet at one time when the spacebar is pressed. Upon some searching, I used Math.random() to call upon a random item from the array. <br><br>
+
+          Moving forward, I’d be working on detecting collisions as well as introducing new rows of threats (??). For the detecting of collisions, I’d also have to think of how to remove that one threat from the array upon collision detection… <br><br>
+
+          This week’s progress: <a href="Week12_ProjectUpdate/www/index.html"> Week 12 Project Update </a>
+
+         <h3 class="journal" id="week13" style="color:LightCoral;">Week 13: Project Update</h3>
+
+         This week I went to search on how to make rows and columns for my threats. Previously, it was only a row of threats moving left and right whenever they hit the edges. However, to make the game more challenging, it wanted to include rows and columns. Upon searching, I realise instead of representing the threats array by threats[j], once can also represent it using threats[j][k]. Specifically, I tried using: <br><br>
+
+         for (let j = 0; j < threatRows; j++) {<br>
+        threats[j]=[];<br>
+        for(let k = 0; k < threatColumns; k++){<br>
+      threats[j][k] = paper.circle(j*80+80, k*60+60, 24);…. <br><br>
+
+        This allowed me to build an array of threats with specified rows and specified columns. <br><br>
+
+        I also wanted to do collision detection this week. For every bullet one fires, I tried to incorporate collision detection using the similar “detectCollision” function taught in the tutorial. I also discovered I can call on threats[j][k].remove or threats[j][k].hide to remove the collided threats on screen. However, there were some complications. <br><br>
+
+        Upon collision, I wanted both the fired bullet and the particular threat to disappear. First, I tried threats.hide() and bullets.remove(); however, I realise that if I hide the threats it is actually still present on screen. This will mean my bullets will continue colliding with it and disappear prematurely. This also means the upper threats will never get collided. <br><br>
+
+        Then, I tried to remove the threats and bullets by using: <br>
+        threats[j][k].remove();<br>
+        bullets[randomNum].remove();<br><br>
+
+        However, my code became very laggy. Also, I realise the more I fired bullets, the lesser bullets there are. At the end, I am unable to fire further bullets. Upon further thinking, I realise it doesn’t make sense if I use the .remove for the bullets as it means that I am removing all my bullets… Instead, I decided to use the .remove for threats only. For the bullets, I decided to create a function to teleport the bullets to another position upon collision, instead of .remove which removes them entirely. <br><br>
+
+        Moving forward, I want to incorporate the timer. Also, I want to add more rules such that when the threats gradually reach the bottom of the screen, a game over notification will pop up. Other rules might include things like “you win” +time taken when user clears all the threats. <br><br>
+
+
+          
+          This week’s progress: <a href="Week13_ProjectUpdate/www/index.html"> Week 13 Project Update </a>
+
+          <h3 class="projectsubmission" id="finalproject" style="color:LightCoral;">Final Write-Up</h3>
+
+
+        This game was inspired by Space Invaders and the main aim of the game is for players to shoot the threats as soon as possible. Players will press on the spacebar to fire bullets, and shift left and right using the left and right key arrows. <br><br>
+
+        Thankfully, many interactions in this game were taught in tutorials. I build my game based on the challenge collisions, and array and sounds tutorial. Specifically, I used the detect collision function, Date.now() and the background sound applications from the tutorials in my game. <br><br>
+
+        ////Broad Discussion////<br>
+        Movable Shooter: I created functions for moving the shooter left and right according to the left and right arrow keys and tapping on event listeners for keydown. This was rather interesting as we only managed to do mouseclick event listeners and not keydown. <br><br>
+
+        Threats Array: I created a single row of threats array initially. However, I realised many of the space invaders games online actually consist of rows and columns. Therefore, I went to do an online search on how to create these multidimensional arrays… (if I’m not wrong I referred to <a href="https://stackoverflow.com/questions/7545641/how-to-create-multidimensional-array"> this</a>) and that was how I created an array of 8 columns and 5 rows, making up a total of threatRows*threatColumns = 40 threats. To make things more interesting, I also managed to use variables for detecting statuses and in turn making the threat array bounce off the side. In particular, I declared touchSide = false; and when the x.pos of threat array is more than dimX || <0, touchSide = true. And if touchSide was true, I made the array move in the opposite direction and also shift downwards. <br><br>
+
+        Bullets Array: For the bullets, I build it up from the challenge collisions tutorial where we had to “spawn” the bullet from the shooter. However, in the tutorial, I was unable to spawn the bullets continuously (if I remembered correctly there was only one bullet). This meant that if I re-press my spacebar the previously spawned bullet will return to the original position. What I would have preferred was a continuous series of bullets. Therefore, I also created a bullet array. However, I ended up shooting the entire array together. Upon further thinking, I realise that I had to single out only one single element from the array. Therefore, I used Math.random()*bullet.length to help me spawn a single random bullet from the array. This way, I was also able to spawn bullets endlessly as long as one presses on the spacebar. <br><br>
+
+        Collision Detection: For collision detection, I wanted to make the threat and bullet disappear upon collision. Therefore, I created another function to detect collision (similar to the tutorial). Then, within the draw function, I called the function to detect collision. If collision was detected, I teleported the bullet to another hidden position and removed the collided threat. I also included an if requirement such that when the threat array’s y.pos is more than shooter’s y.pos, clearInterval takes place and stops all the animation. This was so that I can incorporate the game over function and also pause the background sound. <br><br>
+
+        End Game: To end the game, I tried to think of specific events which ensure that a player has successfully eliminated all the threats. I decided that I will end game upon detecting exactly 40 collisions, which is the total number of threats I have in the array. To do so, I incorporated a counter to count the number of collisions. Once counter >=40, I called the end game function. This counter proved to be very useful as I could use it in the confirm box as well, just to let players know the number of threats they had successfully eliminated out of 40. <br><br>
+
+        Unfortunately, my threats.remove() gave me some complications. I realise that once I removed all my threats, I have no more threats to work with once the player restarts. This was why I tried to teleport my threats the same way I did with my bullets. However, I was unable to do so successfully. Due to time constraints, I decided to add “location.reload()” after the confirm box is checked so that the page refreshes and the threat array is still present upon every refresh. <br><br>
+
+        Some additional elements were the inclusion of the background sound when the user clicks “START” which also signifies the start of the game, as well as the bump sound when a collision was detected. <br><br>
+
+        Overall, I tried to make use of what I learnt from tutorials, homework and codealongs in this game. Above all, I have been exposed to html, css and javascript which has also allowed me to understand the works behind web design development much better. <br><br>
+
+          <a href="Final_Project/www/index.html"> Final Project here </a>
+
+      </article>
+
+ <!-- Ditto the previous note about <aside>. -->
+      <aside class="sidebar">
+        <h3>Final Project</h2>
+
+          <ul>
+
+            <li><a href="#week10"> Project Idea </a></li>
+            <li><a href="#week11"> Week 11: Project Update </a></li>
+            <li><a href="#week12"> Week 12: Project Update </a></li>
+            <li><a href="#week13"> Week 13: Project Update </a></li>
+            <li><a href="#finalproject"> Final Write Up </a></li>
+            <li><a href="Final_Project/www/index.html"> Final Project</a></li>
+
+
+          </ul>
+      </aside>
+
+<!-- Footer -->
+
+      <footer class="footer">
+      </footer>
+    
+    </div>
+  
+
+  </body>
+</html>
+
