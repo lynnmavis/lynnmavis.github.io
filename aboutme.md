@@ -1,16 +1,11 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+#subtitle: Why you'd want to go on a date with me
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+Hello there! I am **Mavis Ang**. I graduated from National University of Singapore (NUS) with a Bachelor of Science in Project and Facilities Management. I am currently exploring the built industry. Aside, I also find joy in learning and creating new things. All the designs featured here are created with Photoshop, Illustrator, Canva, XD, Balsamiq and Figma.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+Curious for more? Click [**here**](https://www.linkedin.com/in/anglynnmavis/) for my LinkedIn profile :)
 
-What else do you need?
 
-### My story
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
