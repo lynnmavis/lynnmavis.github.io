@@ -7,10 +7,10 @@ gh-repo: daattali/beautiful-jekyll
 tags: [test]
 comments: true
 ---
-
+NM2207 is a hands-on module on computational media literacy. It covers the fundamentals of coding in Javascript, HTML and CSS. We had to create a personal website and publish our assignments and tutorial work there. For the final project, we had to combine what we had learnt. I chose to do a simple shooter game. Click [**here**](/NM2207/Web/index.html) to view!   
 <!--- This is a demo post to show you how to write blog posts with markdown.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](https://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc. -->
 
-NM2207 is a hands-on module on computational media literacy. It covers the fundamentals of coding in Javascript, HTML and CSS. We had to create a personal website and publish our assignments and tutorial work there. For the final project, we had to combine what we had learnt. I chose to do a simple shooter game. Click [**here**](/NM2207/Web/index.html) to view!   
+
 
 
 <!--- ## Here is a secondary heading
