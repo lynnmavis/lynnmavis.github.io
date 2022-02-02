@@ -9,7 +9,7 @@ tags: [books, test]
 ---
 NM3221 is a module on mobile interaction design. In this module, we had to participate in a group and individual project. In the group project, we focused on improving the UIUX of the Shopee app. For the individual project, I had to conduct background research, user research, customer journey mapping, user testing and design iterations. I decided to take on a virtual try-on based shopping application. Below are some snippets of my group and individual project: 
 
-!(/assets/img/uiux1.png)
+![](/assets/img/uiux1.png)
 
 <!--- ## Here is a secondary heading
 
